@@ -1,6 +1,9 @@
 # pyEight #
 This is python code to interact with Eight Sleeps new OAuth2 API
 
+This work is now wrapped into a Home Assistant integration at https://github.com/lukas-clarke/eight_sleep
+
+I will likely be maintaining that repo over this one.
 
 ## Introduction ##
 Python code to set temperature using the Eight Sleep API

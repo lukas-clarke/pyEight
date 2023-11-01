@@ -46,7 +46,7 @@ class EightSleep():
     async def set_heating_and_duration_level(self, level: int, duration_seconds, user_id: str):
         """ set heating level from -100 to 100 for a period of time
         ``user_id`` can either be the name of the user or the side of the bed"""
-        await self.turn_on_side(user_id)  # Turn on side before setting temperature
+        await self.set_heating_level(level, user_id)  # Have to set temperature before duration
         url = APP_API_URL + f"v1/users/{self.match_user(user_id)}/temperature"
         data = {"timeBased": {"level": level, "durationSeconds": duration_seconds}}
         await self.api_request("PUT", url, data=data)
