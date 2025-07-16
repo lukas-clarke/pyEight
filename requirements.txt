@@ -1,2 +1,25 @@
-aiohttp>=3.8.1
-httpx>=0.25.0
+# Eight Sleep Automation - Python Requirements
+# Install with: pip install -r requirements.txt
+
+# Core Dependencies
+aiohttp>=3.8.0
+httpx>=0.24.0
+python-dateutil>=2.8.0
+
+# Timezone support for older Python versions
+# Only needed if using Python < 3.9 (uncomment if needed)
+# backports.zoneinfo>=0.2.1
+
+# Note: Standard library modules used (no additional requirements):
+# - asyncio (built-in)
+# - datetime (built-in) 
+# - logging (built-in)
+# - statistics (built-in)
+# - typing (built-in)
+# - sys (built-in)
+# - os (built-in)
+# - json (built-in)
+# - re (built-in)
+# - time (built-in)
+# - traceback (built-in)
+# - atexit (built-in)
